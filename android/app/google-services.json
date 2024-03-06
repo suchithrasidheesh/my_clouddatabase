@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "604024428092",
+    "project_id": "mynewclouddb-2312c",
+    "storage_bucket": "mynewclouddb-2312c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:604024428092:android:3f7b4fd41630941dd09539",
+        "android_client_info": {
+          "package_name": "com.example.my_clouddatabase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMZBUBWkRiAEwYdQIDoo2zkbzCHxGkb4w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
