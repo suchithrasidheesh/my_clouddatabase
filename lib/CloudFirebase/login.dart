@@ -82,7 +82,7 @@ class _myCloudDbState extends State<myCloudDb> {
                         trailing: Wrap(
                           children: [
                             IconButton(onPressed: (){
-                              editUser(userid);
+                              editUser(userid,username,useremail);
                             }, icon:Icon(Icons.edit)),
                             IconButton(onPressed: (){
                               deleteUser(userid);
@@ -118,14 +118,16 @@ class _myCloudDbState extends State<myCloudDb> {
     return userCollection.snapshots();
   }
 
-  Future editUser(var id){
+  Future editUser(var id,String name,String email){
     return showModalBottomSheet(
         context: context,
         isScrollControlled: true,
         elevation: 5,
         builder: (context){
-          final new_namecntrollr=TextEditingController();
-          final new_emailcntrollr=TextEditingController();
+          var new_namecntrollr=TextEditingController();
+          var new_emailcntrollr=TextEditingController();
+          new_namecntrollr.text=name;
+          new_emailcntrollr.text=email;
           return Container(
             padding: EdgeInsets.only(
               left: 15,right: 15,top: 15,
